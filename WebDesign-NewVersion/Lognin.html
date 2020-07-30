@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Love Travelling - Du Lịch và Cuộc Sống
+    </title>
+	<link rel="stylesheet" href="css/style1.css">
+	<link rel="stylesheet" href="css/style3.css">
+	<link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+	<script src="https://kit.fontawesome.com/4702f02b2a.js" crossorigin="anonymous"></script>
+
+
+    
+</head>
+
+<body>
+	<div class="container">
+    <header>
+        <a href="Index.html">
+            <img src="image/logo.png">
+        </a>
+        <hr>
+    </header>
+
+    <div id="menu">
+		<ul>
+			<li><a href="Index.html">Trang Chủ</a></li>
+			<li><a href="Introduce.html">Giới Thiệu</a></li>
+			<div class="dropdown">
+				<div class="dropbtn">Địa Điểm Du Lịch</div>
+					<div align="left" class="dropdown-content">
+						<a href="TourTN.html">Trong Nước</a>
+						<a href="TourNN.html">Quốc Tế</a>
+					</div>
+            </div>
+            <div class="dropdown">
+				<div class="dropbtn">Tài Khoản</div>
+					<div align="left" class="dropdown-content">
+						<a href="Registration.html">Đăng Ký</a>
+						<a href="Lognin.html">Đăng nhập</a>
+					</div>
+			</div>
+			<li><a href="LienHe.html">Liên Hệ</a></li>		
+		</ul>	
+	</div>
+	<!--Dang nhap-->	
+	
+	<div class="login clearfix">
+		<h4 class="text-center title">Đăng Nhập</h4>
+		<div class="col-md-5 col-xs-12 social-block">
+			<div class="social-title">Đăng nhập sử dụng tài khoản mạng xã hội</div>
+			<a class="btn btn-block btn-social btn-facebook" onclick="logInWithFacebook()">
+				<span class="fa fa-facebook"></span> Đăng nhập với Facebook
+			</a>
+			<a class="btn btn-block btn-social btn-google" onclick="logInWithGoogle()">
+				<span class="fa fa-google"></span> Đăng nhập với Google
+			</a>
+		</div>
+		<div class="col-md-7 col-xs-12">
+			<form id="login-form" action="/login_check" method="POST" novalidate="" class="has-validation-callback">
+				<input type="hidden" name="_target_path" value="https://www.saigontourist.net/vi/">
+				<div class="form-content">
+					<div class="form-group label-top">
+						<input class="label-top" type="email" name="_username" value="" id="user_name" required="" data-validation="required email">
+						<label for="user_name">Địa chỉ email</label>
+					</div>
+					<div class="form-group label-top">
+						<input id="login_password" class="label-top" type="password" name="_password" required="" data-validation="required">
+						<label for="login_password">Mật khẩu</label>
+						<span class="error"></span>
+					</div>
+					<div class="form-group">
+						<div class="row gap-5">
+							<div class="col-xs-6 col-sm-6 col-md-6">
+								<div class="checkbox-block font-icon-checkbox">
+									<input name="_remember_me" class="checkbox" value="1" type="checkbox" id="_remember_me">
+									<label class="" for="_remember_me">Ghi nhớ</label>
+								</div>
+							</div>
+							<div class="col-xs-6 col-sm-6 col-md-6 text-right">
+								<a type="button" href="#" class="btn btn-link">Quên mật khẩu?</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="form-footer">
+					<div class="row gap-10">
+						<div class="col-xs-6 col-sm-6 mbot-10">
+							<div><div class="grecaptcha-badge" data-style="bottomright" style="width: 256px; height: 60px; display: block; transition: right 0.3s ease 0s; position: fixed; bottom: 14px; right: -186px; box-shadow: gray 0px 0px 5px; border-radius: 2px; overflow: hidden;"><div class="grecaptcha-logo"><iframe src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LeX0c8UAAAAAJ6RT6EqkGX-tfWHcOaLs-_0qP-Z&amp;co=aHR0cHM6Ly93d3cuc2FpZ29udG91cmlzdC5uZXQ6NDQz&amp;hl=vi&amp;v=NMoy4HgGiLr5NAQaEQa2ho8X&amp;size=invisible&amp;cb=862uzgk8kxnf" width="256" height="60" role="presentation" name="a-snss5sv53i9p" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><div class="grecaptcha-error"></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div><button type="submit" data-sitekey="6LeX0c8UAAAAAJ6RT6EqkGX-tfWHcOaLs-_0qP-Z" data-callback="onLoginSubmit" class="g-recaptcha btn btn-primary btn-block submit">Đăng Nhập</button>
+						</div>
+						<div class="col-xs-6 col-sm-6 mbot-10">
+							<a type="submit" class="btn btn-danger btn-block" href="#" data-dismiss="modal">Hủy
+							</a>
+						</div>
+					</div>
+					<div class="text-left">
+						Chưa có tài khoản
+						<a type="button" href="Registration.html" class="btn btn-link">Đăng Ký</a>
+					</div>
+				</div>
+			</form>
+			<script type="text/javascript">
+				$.validate({modules: 'html5', errorMessageClass: 'error', lang: locale});
+			</script>
+		</div>
+	</div>
+	</div>
+
+	<footer>
+		<section class="half">
+			<article>
+				<p>LIÊN HỆ</p>
+			<i class="fas fa-map-marked-alt" style="color: orange;"> Số 06, Trần Văn Ơn, phường Phú Hoà, Tp Thủ Dầu Một, Bình Dương</i>
+			<br>
+			<i class="fas fa-phone-alt" style="color: orange"> 0326488251</i>
+			<br>
+			<i class="fas fa-envelope" style="color: orange"> 1824801030060@student.tdmu.edu.com</i>
+			<br>
+			<div class="copyrights-content">
+				Copyright &copy; Lê Thành Đạt - D18PM01 - TDMU</a>
+			</div>
+			</article>
+			<article>
+				<p>
+					Nhập Mail để nhận thông báo mới nhé
+				</p>
+				<form class="form-inline">
+					<input class="form-control" type="email" placeholder="Nhập email của bạn..." aria-label="email@example.com">
+					<button class="btn btn-outline-success " type="submit" style="color: black;">Gửi</button>
+				</form>
+				<br>
+
+				<p style="font-size: 25px;">
+					Mạng Xã Hội
+				</p>
+				<div>
+					<i class="fab fa-facebook-f" style="font-size: 30px;"></i>
+					<i class="fab fa-instagram-square" style="font-size: 30px;"></i>
+					<i class="fab fa-youtube" style="font-size: 30px;"></i>
+					<i class="fab fa-twitter-square" style="font-size: 30px;"></i>
+				</div>
+				
+			</article>
+		</section>
+	</footer>
+
+</body>
+
+</html>

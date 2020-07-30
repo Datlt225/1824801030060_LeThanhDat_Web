@@ -1,0 +1,21 @@
+
+/*chia body giới thiệu*/
+.textt {
+    font-size: 2em;
+    color: black;
+    text-align: center;
+}
+
+.textt article {
+    width: 50%;
+    float: left;
+    padding: 1em;
+    text-align: center;
+}
+
+.textt:after {
+    content:"";
+    clear: both;
+    display: table;
+}
+

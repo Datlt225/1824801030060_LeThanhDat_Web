@@ -1,0 +1,106 @@
+nav li:hover {
+    background-color: orange;
+}
+
+/* new menu */
+
+#menu ul 
+{
+	list-style-type: none ;
+	text-align: center ;
+	padding-left:80px;
+	position: absolute ;
+	right: 200px;
+	top:30px;
+	font-size: 17px ;
+}
+
+#menu ul li
+{
+	color: #1E1D1D ;
+	display: inline-table ;
+	width: 150px ;
+	height: 40px ;
+	line-height: 40px ;
+	position: relative ;
+}
+
+#menu ul li a
+{
+	color:#1E1D1D ;
+	text-decoration: none ;
+	display: block ;
+	text-align: center ;
+}
+
+#menu ul li a:hover
+{
+	color: #E79287 ;
+}
+.dropbtn{
+	padding: 17px;
+	font-size: 17px;
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+.dropdown{
+	position: relative;
+	display: inline-block;
+}
+.dropdown-content{
+	display: none;
+	position: absolute;
+	background-color: #6e987e;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px;
+	z-index: 1;
+	
+}
+.dropdown-content a{
+	color: #161515;
+	text-decoration: none;
+	display: block;
+	padding: 12px 16px;
+	
+	background-color: #ffffff; 
+}
+.dropdown-content a:hover{
+	background-color: #CDEBDC;
+	color: #704a40;
+}
+.dropdown:hover .dropdown-content{
+	display: block;
+}
+.dropdown:hover .dropbtn{
+	color: #E79287;
+}
+
+
+/*chia footer*/
+footer {
+    background-color: none;
+    padding: 3.5em;
+    color: white;
+	text-align: center;
+	background-color: black;
+}
+
+.half{
+	text-align: center;
+}
+.half article{
+	width:50%;
+	font-size: 20px;
+    float:left;
+    padding:1em;
+	text-align: center;
+}
+.half:after{
+    content:"";
+    clear:both;
+    display:table;
+}
+
+
+
